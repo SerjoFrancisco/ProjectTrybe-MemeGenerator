@@ -4,6 +4,5 @@ const meme = document.getElementById('meme-text');
 
 function botar() {
   meme.innerText = text.value;
-  text.value = '';
 }
-insert.addEventListener('click', botar);
+text.oninput = botar;
