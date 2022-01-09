@@ -4,7 +4,7 @@ const imageUp = document.getElementById('meme-insert');
 const imageDiv = document.getElementById('meme-image');
 
 function imageUpload() {
-  let imgSource = URL.createObjectURL(imageUp.files[0]);
+  const imgSource = URL.createObjectURL(imageUp.files[0]);
   imageDiv.src = imgSource;
 }
 
@@ -13,4 +13,4 @@ function botar() {
 }
 text.oninput = botar;
 
-imageDiv.addEventListener('click', imageUpload);
+imageUp.addEventListener('change', imageUpload);
