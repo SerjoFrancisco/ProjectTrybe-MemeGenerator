@@ -8,3 +8,8 @@
     position: absolute;
     bottom: 0;
 }
+#meme-image{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+}
