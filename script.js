@@ -20,13 +20,14 @@ function watering() {
 function bury() {
   imageContainer.style.border = '6px groove green';
 }
-function useTemplate() {
-  imageDiv.src = event.target.src;
+function useTemplate({ target }) {
+  imageDiv.src = target.src;
 }
 function botar() {
   meme.innerText = text.value;
 }
 text.oninput = botar;
+
 function listenAll() {
   for (let i = 1; i < template.length; i += 1) {
     template[i].addEventListener('click', useTemplate);

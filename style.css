@@ -1,9 +1,14 @@
+body {
+  text-align: center;
+}
+
 #meme-image-container {
   border: 1px solid black;
   width: 400px;
   height: 400px;
   position: relative;
-  background-color: white;
+  align-self: center;
+  margin: 10px auto;
 }
 
 #meme-text {
